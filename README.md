@@ -1,4 +1,4 @@
-# <note-to-sammi>
+# Nostradamus
 
 ## Description
 
@@ -70,7 +70,7 @@ SOFTWARE.
 
 ## Badges
 
-![licensebadge](https://img.shields.io/github/license/shernandez927/note-to-sammi?style=for-the-badge) ![repobadge](https://img.shields.io/github/repo-size/shernandez927/note-to-sammi?style=for-the-badge) ![languagebadge](https://img.shields.io/github/languages/count/shernandez927/note-to-sammi?style=for-the-badge)
+![licensebadge](https://img.shields.io/github/license/shernandez927/nostradamus?style=for-the-badge) ![repobadge](https://img.shields.io/github/repo-size/shernandez927/nostradamus?style=for-the-badge) ![languagebadge](https://img.shields.io/github/languages/count/shernandez927/nostradamus?style=for-the-badge)
 
 ## Features
 
