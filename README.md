@@ -36,6 +36,8 @@ If cloned locally run this command in the terminal to initialize application:
     node server.js
 ```
 
+Heroku Link: (https://salty-bastion-85211.herokuapp.com)
+
 ![demogif](public/assets/images/demo.gif)
 
 
