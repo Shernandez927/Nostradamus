@@ -5,7 +5,7 @@ const fs = require("fs");
 const api = require("./routes/index");
 
 // Uses port 3001 if no other envrionment variable is present
-const PORT = process.env.port || 8080;
+const PORT = process.env.PORT || 8080;
 
 const app = express();
 
