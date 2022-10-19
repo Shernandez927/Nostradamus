@@ -36,13 +36,9 @@ If cloned locally run this command in the terminal to initialize application:
     node server.js
 ```
 
-Provide instructions and examples for use. Include screenshots as needed.
+![demogif](public/assets/images/demo.gif)
 
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
 
-    ```md
-    ![alt text](assets/images/screenshot.png)
-    ```
 
 ## Credits
 
@@ -82,8 +78,32 @@ SOFTWARE.
 
 ## Features
 
-If your project has a lot of features, list them here.
+- Node.js
+
+- Express.js
+
 
 ## Tests
 
-Go the extra mile and write tests for your application. Then provide examples on how to run them here.
+Run this command in the terminal to install Mocha:
+
+```
+    npm install --save-dev mocha
+```
+
+Run this command to install SuperTest:
+
+```
+    npm install supertest --save-dev
+```
+
+Run this command to install Chai:
+
+```
+    npm install chai --save-dev
+```
+To run tests:
+
+```
+    npm test
+```

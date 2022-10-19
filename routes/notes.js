@@ -1,4 +1,4 @@
-// Imports express, the fsUtils file, and uniqid npm
+// Imports express, destructured methods from the fsUtils file, and uniqid npm
 const notes = require("express").Router();
 const { readFromFile, writeToFile, readAndAppend } = require("../helpers/fsUtils");
 const uuid = require("uniqid");
@@ -11,38 +11,37 @@ notes.get("/", (req, res) => {
 
 // POST's note to the db.json file using the readAndAppend method from the fsUtils file
 notes.post("/", (req, res) => {
-    console.log(req.body);
 
-    const { title, text, } = req.body;
+    const { title, text } = req.body;
 
     if (req.body) {
         const newNote = {
             title,
             text,
-            note_id: uuid(),
+            id: uuid(),
         };
 
         readAndAppend(newNote, "./db/db.json");
-        res.json("Successfully added note! ✅");
+        res.json(newNote);
     } else {
         res.error("Error adding note ⚠️");
     }
 
 });
 
-// DELETE's note based on the id and rewrites the other notes back to db.json file with readFromFile and writeToFile method from fsUtils
+// DELETE's note based on the id and rewrites the other notes back to db.json file with readFileSync method and writeToFile method from fsUtils file
 notes.delete("/:id", (req, res) => {
+    // Destructures note id
     const { id } = req.params;
-    console.log(req.params);
-    
-    if(req.params) {
-        writeToFile("./db/db.json", )
-    } else {
-        res.error("Error in deleting this note ⚠️");
-    }
-
-   
-
+    // Reads db.json file and parses json data
+    const rawData = fs.readFileSync("./db/db.json");
+    const savedNotes = JSON.parse(rawData);
+    // Filters through parsed data and "returns" data not strictly equal to the request parameter
+    const filteredNotes = savedNotes.filter((data) => data.id !== req.params.id);
+    // Rewrites db.json file
+    writeToFile("./db/db.json", filteredNotes);
+    // "Returns" filtered data
+    res.json(filteredNotes);
    
 });
 
