@@ -2,7 +2,7 @@
   "name": "nostradamus",
   "version": "1.0.0",
   "description": "## Description",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "mocha '__tests__/notes.test.js' --exit"
   },
