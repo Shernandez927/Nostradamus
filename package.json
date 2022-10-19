@@ -4,6 +4,7 @@
   "description": "## Description",
   "main": "server.js",
   "scripts": {
+    "start": "node server.js",
     "test": "mocha '__tests__/notes.test.js' --exit"
   },
   "repository": {
