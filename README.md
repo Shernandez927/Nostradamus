@@ -2,16 +2,12 @@
 
 ## Description
 
-Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
 
-- What was your motivation?
-- Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
-- What problem does it solve?
-- What did you learn?
+- This project utilizes Express.js to create a note-taking application that saves and displays persistent data from a JSON file.
 
-## Table of Contents (Optional)
+- This project was created to better understand and implement Express.js, creating rest endpoints, and utilizing GET, POST, and DELETE requests, as well as modular routing.
 
-If your README is long, add a table of contents to make it easy for users to find what they need.
+## Table of Contents
 
 - [Installation](#installation)
 - [Usage](#usage)
@@ -20,13 +16,25 @@ If your README is long, add a table of contents to make it easy for users to fin
 
 ## Installation
 
-Run this command to install the package-lock.json file:
+- Run this command to install Express:
 
 ```
-npm install
+    npm install express
 ```
+
+ - Run this command to install uniqid:
+
+ ```
+    npm install uniqid
+ ```
 
 ## Usage
+
+If cloned locally run this command in the terminal to initialize application: 
+
+```
+    node server.js
+```
 
 Provide instructions and examples for use. Include screenshots as needed.
 
@@ -38,11 +46,11 @@ To add a screenshot, create an `assets/images` folder in your repository and upl
 
 ## Credits
 
-List your collaborators, if any, with links to their GitHub profiles.
+Collaborators:
 
-If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
+- Adam Sherrill (https://github.com/ajsherrill2)
 
-If you followed tutorials, include links to those here as well.
+- Damien Shoemake (https://github.com/Damien-Shoemake)
 
 ## License
 
@@ -75,10 +83,6 @@ SOFTWARE.
 ## Features
 
 If your project has a lot of features, list them here.
-
-## How to Contribute
-
-If you created an application or package and would like other developers to contribute it, you can include guidelines for how to do so. The [Contributor Covenant](https://www.contributor-covenant.org/) is an industry standard, but you can always write your own if you'd prefer.
 
 ## Tests
 
